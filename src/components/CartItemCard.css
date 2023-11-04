@@ -1,0 +1,30 @@
+.cartdisplay{
+    width: 10rem;
+    height: 20rem;
+
+
+
+    gap: 20rem;
+    align-items: center;
+    width: 10rem;
+    text-align: center;
+    background: rgba(255, 255, 255, 0.26);
+    border: 7px solid var(--orangeCard);
+margin-right: 70px;
+margin-top: 20px;
+    border-radius: 20px;
+    padding: 0px 26px 2rem 26px;
+}
+
+.addbutton{
+    background: linear-gradient(180deg, #03a51e 26.71%, #03d326 99.36%);
+  border-radius: 34px;
+  border: none;
+  color:white;
+  font-weight: bold;
+  font-size: 16px;
+  padding: 11px 26px 11px 26px;
+  margin-bottom: 20px;
+  margin-top: 18px;
+}
+
