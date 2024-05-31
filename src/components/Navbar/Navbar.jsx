@@ -1,52 +1,47 @@
 import React from "react";
-import Toggle from "../Toggle/Toggle";
+
 import "./Navbar.css";
 import { Link } from "react-scroll";
+import { useNavigate } from "react-router-dom";
+import { FaBars } from "react-icons/fa";
+import NavIcon from "./NavIcon";
+
+
+
 const navbar = () => {
+  const navigate = useNavigate();
+
+  function navigateLogin(event) {
+    navigate("/login");
+  }
+
+  function navigateSignup(event) {
+    navigate("/register");
+  }
+
   return (
     <div className="n-wrapper" id="Navbar">
-      {/* left */}
-      <div className="n-left">
-        <div className="n-name">Fresh Cart</div>
-        <Toggle />
-      </div>
-      {/* right */}
-      <div className="n-right">
-        <div className="n-list">
-          <ul style={{ listStyleType: "none" }}>
-            <li>
-              <Link activeClass="active" to="Navbar" spy={true} smooth={true}>
-                Home
-              </Link>
-            </li>
-            <li>
-              <Link to="services" spy={true} smooth={true}>
-                Serivces
-              </Link>
-            </li>
-            <li>
-              <Link to="works" spy={true} smooth={true}>
-                Experience
-              </Link>
-            </li>
-            <li>
-              <Link to="portfolio" spy={true} smooth={true}>
-              OurPicks
-              </Link>
-            </li>
-            <li>
-              <Link to="testimonial" spy={true} smooth={true}>
-                Testimonial
-              </Link>
-            </li>
 
-            
-          </ul>
+
+
+      <div className="navbar">
+        <div className="logo"><a className="freshcart" >Fresh Cart</a></div>
+
+        <ul className="links">
+          <li><Link className="nav-a" to="portfolio" spy={true} smooth={true}>Our Picks</Link></li>
+          <li><Link className="nav-a" to="works" spy={true} smooth={true}>Services</Link></li>
+          <li><Link className="nav-a" to="contact" spy={true} smooth={true}>Contact Us</Link></li>
+        </ul>
+        <a onClick={navigateLogin} className="action_btn">Login</a>
+        <div className="toggle_btn">
+          <NavIcon/>
         </div>
-        <Link to="contact" spy={true} smooth={true}>
-        <button className="button n-button">Contact</button>
-        </Link>
       </div>
+
+      
+
+
+
     </div>
   );
 };

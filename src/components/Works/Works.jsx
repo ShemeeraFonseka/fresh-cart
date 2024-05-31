@@ -7,7 +7,7 @@ import Shopify from "../../img/Shopify.png";
 import Facebook from "../../img/Facebook.png";
 import { themeContext } from "../../Context";
 import { motion } from "framer-motion";
-import {Link} from 'react-scroll'
+import { Link } from 'react-scroll'
 const Works = () => {
   // context
   const theme = useContext(themeContext);
@@ -18,38 +18,30 @@ const Works = () => {
     <div className="works" id="works">
       {/* left side */}
       <div className="w-left">
-        <div className="awesome">
+        
           {/* dark Mode */}
-          <span style={{ color: darkMode ? "white" : "" }}>
-          Fresh Online Orders
+          <h1 className="fresh" >
+            Fresh Online Orders
+          </h1>
+          
+          <span style={{ textAlign: "justify", paddingRight: "0px", lineHeight: "34px" }}>
+            Experience the unparalleled convenience and culinary delight with Fresh Cart. Our service offers a seamless and hassle-free way to access premium-quality ingredients sourced directly from local farms. Whether you're exploring new recipes or seeking inspiration for your culinary creations, Fresh Cart delivers a curated selection of farm-fresh produce, creamy dairy delights, and gourmet treasures right to your doorstep. Embrace the joy of cooking with seasonal selections that celebrate the vibrant flavors of each time of year. Join us on a journey of taste exploration and elevate your culinary experience with Fresh Cart.
           </span>
-          <span>Fresh produce, dairy online.<br></br> Order, deliver, enjoy!</span>
-          <p>
-            To place an order for fresh fruits, vegetables, and dairy products,
-            <br />
-            simply browse our selection online and add the items you want to your cart. 
-            <br />
-            Once you've made your selections and complete your order.
-            <br />
-            We'll take care of the rest, delivering your fresh, flavorful products straight to your door.
-          </p>
-          <Link to="contact" smooth={true} spy={true}>
-            <button className="button s-button">Place Order</button>
-          </Link>
+
           <div
             className="blur s-blur1"
-            style={{ background: "#c4f593"}}
+            style={{ background: "#c4f593" }}
           ></div>
-        </div>
+        
 
-        {/* right side */}
+        
       </div>
       <div className="w-right">
         <motion.div
           initial={{ rotate: 45 }}
           whileInView={{ rotate: 0 }}
           viewport={{ margin: "-40px" }}
-          transition={{ duration: 3.5, type: "spring" }}
+          transition={{ duration: 9.5, type: "spring" }}
           className="w-mainCircle"
         >
           <div className="w-secCircle">

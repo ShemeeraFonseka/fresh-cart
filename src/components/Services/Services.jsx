@@ -23,16 +23,12 @@ const Services = () => {
       {/* left side */}
       <div className="awesome">
         {/* dark mode */}
-        <span style={{ color: darkMode ? "white" : "" }}> Let us help yoU</span>
-        <span>Eat well and feel greaT !</span>
-        <p>
-        Our fresh and delicious food, vibrant vegetables, and high-quality dairy
-          <br />
-          products are the perfect addition to any healthy lifestyle
+        <span style={{ color: darkMode ? "white" : "" }}> Let us help you</span>
+        <span>Eat well and feel great !</span>
+        <p style={{ fontSize:"16px",textAlign:"justify",width:"400px",lineHeight:"35px"}}>
+        Fresh Cart delivers farm-fresh produce, creamy dairy delights, and gourmet treasures to your doorstep, simplifying your grocery experience. Our convenient delivery service saves you time and energy while ensuring the highest quality ingredients. With seasonal selections, we inspire both seasoned chefs and kitchen novices to elevate their cooking. Experience culinary satisfaction with Fresh Cart today!
         </p>
-        <a href="/shop">
-          <button className="button s-button">Our Cart</button>
-        </a>
+        
         <div className="blur s-blur1" style={{ background: "#c4f593" }}></div>
       </div>
       {/* right */}
@@ -40,7 +36,7 @@ const Services = () => {
         {/* first card */}
         <motion.div
           initial={{ left: "25rem" }}
-          whileInView={{ left: "14rem" }}
+          whileInView={{ left: "16rem" }}
           transition={transition}
         >
           <Card
@@ -51,8 +47,8 @@ const Services = () => {
         </motion.div>
         {/* second card */}
         <motion.div
-          initial={{ left: "-11rem", top: "12rem" }}
-          whileInView={{ left: "-4rem" }}
+          initial={{ left: "11rem", top: "12rem" }}
+          whileInView={{ left: "-2rem" }}
           transition={transition}
         >
           <Card
@@ -64,7 +60,7 @@ const Services = () => {
         {/* 3rd */}
         <motion.div
           initial={{ top: "19rem", left: "25rem" }}
-          whileInView={{ left: "12rem" }}
+          whileInView={{ left: "16rem" }}
           transition={transition}
         >
           <Card

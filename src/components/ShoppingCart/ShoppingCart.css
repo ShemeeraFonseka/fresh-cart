@@ -1,0 +1,66 @@
+.shoppingportfolio {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  margin-top: 45px;
+}
+
+/* heading */
+.shoppingportfolio span {
+  color: var(--black);
+  font-size: 26px;
+  font-weight: bold;
+}
+
+
+
+/* slider */
+.shoppingportfolio .swiper {
+  overflow: visible !important;
+}
+
+.shoppingportfolio-slider {
+  margin-top: 3rem;
+  width: 100%;
+}
+
+.shoppingportfolio-slider .swiper-slide {
+  width: 20rem;
+}
+
+.shoppingportfolio img {
+  width: 12rem;
+  filter: drop-shadow(-12px 15px 13px rgba(143, 142, 142, 0.25));
+  border-radius: 19px;
+  margin-left: 3.5rem;
+
+}
+
+.imageframe{
+  width: 12rem;
+  height: 11rem;
+}
+
+.add-button {
+  background: linear-gradient(180deg, #03a51e 26.71%, #329242 99.36%);
+  border-radius: 34px;
+  border: none;
+  color: white;
+  font-weight: bold;
+  font-size: 12px;
+  padding: 11px 26px 11px 26px;
+  margin-bottom: 20px;
+  width: 200px;
+}
+
+.add-button:hover {
+  background: rgb(132, 202, 75);
+  cursor: pointer;
+  color: white;
+}
+
+.slide-content {
+  text-align: center;
+
+}

@@ -1,34 +1,19 @@
 .works {
-  padding: 0 3rem 0 3rem;
   display: flex;
-  height: 90vh;
-  margin-top: 4rem;
-
-  /* scroll */
-  align-items: center;
+  height: 60vh;
+  margin-top: 3rem;
+  padding: 30px;
+  padding-top: 120px;
 }
 /* left side */
-.awesome {
+
+.w-left {
   display: flex;
-  flex-direction: column;
   position: relative;
+  flex: 1;
+  flex-direction: column;
 }
 
-.awesome > :nth-child(1) {
-  color: var(--black);
-  font-size: 2.5rem;
-  font-weight: bold;
-}
-.awesome > :nth-child(2) {
-  color: var(--orange);
-  font-size: 2.5rem;
-  font-weight: bold;
-}
-.awesome > :nth-child(3) {
-  color: var(--gray);
-  font-size: 14px;
-  margin-top: 1rem;
-}
 .s-button {
   width: 8rem;
   height: 2rem;
@@ -37,8 +22,9 @@
 
 /* right side */
 .w-right {
+  flex: 1;
   position: relative;
-  left: -4rem;
+  padding: 0;
   transform: scale(0.85);
 }
 
@@ -104,35 +90,43 @@
   z-index: 1;
 }
 .blueCircle {
-  background: #1949b8;
+  background: #95ff80;
   left: 18rem;
   top: 0rem;
 }
 .yellowCircle {
-  background: #f5c32c;
+  background: #20b60c;
   left: 18rem;
   top: 8rem;
 }
 
-@media screen and (max-width: 480px) {
+.fresh {
+  font-weight: bold;
+  font-size: 25px;
+}
+
+
+
+
+@media screen and (max-width: 1200px) {
   .works {
-    flex-direction: column;
-    height: 55rem;
+    display: block;
+    height: auto;
+
+  }
+
+ 
+  .w-right {
+    width: 100%; 
     padding: 0;
-    gap: 5rem;
   }
 
   .w-right {
-    display: flex;
-    align-items: flex-start;
-    justify-content:start;
-    transform: scale(0.7);
+    display: none;
+    
+
   }
-  .w-mainCircle{
-    position: static;
-  }
-  .w-backCircle{
-    left: 8rem!important;
-  }
+
+  
 
 }

@@ -1,11 +1,4 @@
-.contact-form{
-    padding: 0 3rem 0 3rem;
-    display: flex;
-    height: 80vh;
-    margin-top: 4rem;
-      /* scroll */
-  padding-top: 3rem;
-}
+
 
 .c-right{
     display: flex;
@@ -42,20 +35,19 @@ textarea{
     left: 8rem;
 }
 
-@media screen and (max-width: 480px) {
-    .contact-form{
-        padding: 0;
-        flex-direction: column;
-        gap: 5rem;
-        height: 40rem;
-    }
-    .c-right .user{
-        width: 16rem;
-    }
-    
 
-}   
 .contect{
         font-size: x-small;
          height: 4rem!important;
+         line-height: 30px;
+         text-align: center;
+}
+
+.c-left {
+    display: flex;
+    position: relative;
+    flex: 1 1;
+    flex-direction: column;
+    gap: 2rem;
+    text-align: center;
 }

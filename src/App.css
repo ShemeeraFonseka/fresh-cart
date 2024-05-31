@@ -11,10 +11,13 @@
     --smboxShadow: -79px 51px 60px rgba(72, 133, 77, 0.08);
 }
 
+
+
 .App{
-    padding: 0.5rem 3.5rem;
+    padding: 0.5rem 2.5rem;
     overflow: hidden;
-    color: var(--black);    
+    color: var(--black);   
+    background-color: #eefff2; 
 }
 
 .button {
@@ -23,7 +26,7 @@
     border-radius: 34px;
     border: none;
     color: white;
-    font-size: 16px;
+    font-size: 12px;
     padding: 11px 26px 11px 26px;
   }
   
@@ -33,6 +36,14 @@
     border: 1px solid var(--orange);
     color: var(--orange);
   }
+
+
+  span{
+    font-size: 16px;
+
+  }
+
+  
   @media screen and (max-width: 480px) {
     .App {
       padding: 0.5rem 1rem;

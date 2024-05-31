@@ -5,7 +5,7 @@ import "./App.css";
 import Experience from "./components/Experience/Experience";
 import Works from "./components/Works/Works";
 import Portfolio from "./components/Portfolio/Portfolio";
-import Testimonial from "./components/Testimonials/Testimonial";
+
 import Contact from "./components/Contact/Contact";
 import Footer from "./components/Footer/Footer";
 import { useContext } from "react";
@@ -20,26 +20,34 @@ import ListProductComponent from "./components/ListProductComponent";
 import CreateProductComponent from "./components/CreateProductComponent";
 import UpdateProductComponent from "./components/UpdateProductComponent";
 
-import CartHome from "../src/components/CartHome";
-import Cart from "../src/components/Cart";
-import { CartProvider } from 'react-use-cart';
+
+import ShoppingCart from "./components/ShoppingCart/ShoppingCart";
+import Items from "./components/Items/Items";
+import ShopItems from "./components/ShopItems/ShopItems";
+import Checkout from "./components/Checkout";
+
+import { CartProvider } from "./components/CartContext";
+
+
+
+
 
 
 function App() {
-  const theme = useContext(themeContext);
-  const darkMode = theme.state.darkMode;
+
   return (
-    <div className="App" style={{background: darkMode ? "black" : "", color: darkMode ? "white" : "",}}>
+    <CartProvider>
+    
       <Routes>
       
-      <Route path="/" element={<><Navbar /><Intro /><Services /><Experience /><Works /><Portfolio />
-      <Testimonial /><Contact /><Footer /></>} />
+      <Route path="/" element={<><Navbar /><Intro /><Works /><Experience />
+      <Contact /><Footer /></>} />
 
       <Route path="/login" element={<><LoginForm /></>} />
 
       <Route path="/adminlogin" element={<><AdminLogin /></>} />
 
-      <Route path="/shop/*" element={<CartProvider><CartHome/><Cart/></CartProvider>} />
+
 
         <Route path="/register" element={<><RegisterForm /></>} />
         
@@ -50,10 +58,23 @@ function App() {
         <Route path="/add-products" element={<><CreateProductComponent /></>} />
 
         <Route path="/update-products/:id" element={<><UpdateProductComponent /></>} />
+
+        
+
+        <Route path="/shopping-cart" element={<><ShoppingCart /></>} />
+
+        <Route path="/items" element={<><Items /></>} />
+
+        
+
+        <Route path="/shop-items" element={<><ShopItems /></>} />
+
+        <Route path="/checkout" element={<><Checkout /></>} />
       
       </Routes>
 
-    </div>
+      </CartProvider>
+   
   );
 }
 

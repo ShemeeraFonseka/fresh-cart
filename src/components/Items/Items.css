@@ -1,0 +1,18 @@
+.close-icon{
+    display: flex;
+    cursor: pointer;
+    justify-content: flex-end;
+    padding-top: 20px;
+}
+
+.container{
+    display: flex;
+    justify-content: center;
+    padding-top: 15px;
+}
+
+.container span{
+    color: var(--black);
+  font-size: 26px;
+  font-weight: bold;
+}

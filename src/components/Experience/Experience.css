@@ -4,7 +4,8 @@
     justify-content: center;
     gap: 5rem;
     height: 30vh;
-    margin-bottom: 8rem;
+    margin-bottom: 4rem;
+    margin-top: 3rem;
     /* darkmode */
     color: var(--black);
   }
@@ -16,7 +17,7 @@
   .circle {
       width: 4rem;
       height: 4rem;
-      background: white;
+      background: rgb(157, 252, 157);
       border-radius: 100%;
       position: relative;
       display: flex;

@@ -1,39 +1,17 @@
+.loginform{
+  background-color: rgb(240, 16, 16);
+}
 
-
-  form {
-    width: 60%;
-    margin: 60px auto;
-    background: #efefef;
-    padding: 60px 120px 80px 120px;
-    text-align: center;
-    -webkit-box-shadow: 2px 2px 3px rgba(0,0,0,0.1);
-    box-shadow: 2px 2px 3px rgba(0,0,0,0.1);
-  }
-
-  label {
-    display: block;
-    position: relative;
-    margin: 40px 0px;
-  }
-
-  .label-txt {
-    position: absolute;
-    top: -1.6em;
-    padding: 10px;
-    font-family: sans-serif;
-    font-size: .8em;
-    letter-spacing: 1px;
-    color: rgb(120,120,120);
-    transition: ease .3s;
-  }
   
-  .input {
+  
+  .login-input {
     width: 100%;
-    padding: 10px;
+    padding: 4px;
     background: transparent;
     border: none;
     outline: none;
     margin-top: 30px;
+    background: #BCBCBC;
   }
   
   .line-box {
@@ -91,6 +69,14 @@
     left: -5%;
     top:-8%;
 
+  }
+
+  .login-input{
+    width: 100%;
+    padding: 8px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
   }
 
   

@@ -31,38 +31,23 @@ const Contact = () => {
 
   return (
     <div className="contact-form" id="contact">
-      {/* left side copy and paste from work section */}
-      <div className="w-left">
-        <div className="awesome">
+
+      <div className="c-left">
+        
           {/* darkMode */}
-          <span style={{color: darkMode?'white': ''}}>Get in Touch</span>
-          <span>Contact Us</span>
-          <div className="blur s-blur1" style={{ background: "#c4f593" }}> </div>
+          <span className="fresh">Get in Touch with us</span>
+
+        
                 <div className="contect" style={{color: darkMode?'white': ''}}>
-                <span>Email  : FrashCart@gmail.com</span><div></div>
+                <span>Email  : freshcart@gmail.com</span><div></div>
                 <span>Mobile : +94770393894</span><div></div>
                 <span>Address: b50/3 Kandy,headquarters</span><div></div>
                 
                 </div>
                 
-        </div>
+       
       </div>
-      {/* right side form */}
-      {/*
-      <div className="c-right">
-        <form ref={form} onSubmit={sendEmail}>
-          <input type="text" name="user_name" className="user"  placeholder="Name"/>
-          <input type="email" name="user_email" className="user" placeholder="Email"/>
-          <textarea name="message" className="user" placeholder="Message"/>
-          <input type="submit" value="Send" className="button"/>
-          <span>{done && "Thanks for Contacting me"}</span>
-          <div
-            className="blur c-blur1"
-            style={{ background: "#c4f593" }}
-          ></div>
-        </form>
-      </div>
-  */}
+     
     </div>
   );
 };
