@@ -5,7 +5,7 @@ import { ThemeProvider } from './Context';
 import { BrowserRouter } from 'react-router-dom';
 
 ReactDOM.render(
-  <BrowserRouter>
+  <BrowserRouter basename="/fresh-cart">
   <ThemeProvider>
     <App />
   </ThemeProvider>
