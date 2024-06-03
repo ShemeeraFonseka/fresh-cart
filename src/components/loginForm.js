@@ -18,6 +18,10 @@ function LoginForm() {
     const [password, setPassword] = useState("");
     const [formSuccess, setFormSuccess] = useState("");
 
+const navigateRegister=()=>{
+    navigate("/register");
+}
+
     const handleInputChange = (e) => {
         const { id, value } = e.target;
         if (id === "userName") {
@@ -75,7 +79,7 @@ function LoginForm() {
                 </button>
                 {error && <p style={{ color: "red", fontSize: "14px" }}>{error}</p>}
 
-                <p style={{ fontSize: "14px" }}>Not registered? <a style={{ fontSize: "14px", color: "#329242" }} href="/register">Create an account</a></p>
+                <p style={{ fontSize: "14px" }}>Not registered? <a style={{ fontSize: "14px", color: "#329242",cursor:"pointer" }} onClick={navigateRegister}>Create an account</a></p>
                 <br />
                 <br />
 

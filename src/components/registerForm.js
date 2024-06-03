@@ -18,6 +18,11 @@ function Header() {
 
     const [error, setError] = useState(null);
 
+    const navigateLogin=()=>{
+        navigate("/login");
+    }
+    
+
     const handleInputChange = (e) => {
         const { id, value } = e.target;
         if (id === "userName") {
@@ -139,7 +144,7 @@ function Header() {
 
                 {error && <p style={{ color: "red" ,fontSize:"14px"}}>{error}</p>}
 
-                <p style={{ fontSize: "14px" }}>Already registered? <a style={{ fontSize: "14px", color: "#329242" }} href="/login">Login</a></p>
+                <p style={{ fontSize: "14px" }}>Already registered? <a style={{ fontSize: "14px", color: "#329242",cursor:"pointer" }} onClick={navigateLogin}>Login</a></p>
             </form>
 
         </div>

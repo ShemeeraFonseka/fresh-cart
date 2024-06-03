@@ -28,7 +28,7 @@ const navbar = () => {
         <div className="logo"><a className="freshcart" >Fresh Cart</a></div>
 
         <ul className="links">
-          <li><Link className="nav-a" to="portfolio" spy={true} smooth={true}>Our Picks</Link></li>
+
           <li><Link className="nav-a" to="works" spy={true} smooth={true}>Services</Link></li>
           <li><Link className="nav-a" to="contact" spy={true} smooth={true}>Contact Us</Link></li>
         </ul>
