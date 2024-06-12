@@ -137,7 +137,7 @@ li{
   font-size: 1.6rem;
   background: none;
   color: #060b26;
-  background-color: #eefff2;
+  background-color: #ffff;
 }
 
 .menu-bars-close{
@@ -213,21 +213,19 @@ li{
     display: none;
   }
 
-  .n-wrapper .n-right .bar-icon{
-    display: block;
-  }
+  
 
-  .navbar .links,
-  .navbar .action_btn{
+  .navbar .links{
     display: none;
   }
 
-  .navbar .toggle_btn{
+  
+  .dropdown_menu{
     display: block;
   }
 
-  .dropdown_menu{
-    display: block;
+  .n-wrapper {
+    margin: 30px;
   }
   
   

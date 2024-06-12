@@ -1,29 +1,23 @@
-import React from 'react';
-import { RxDashboard } from "react-icons/rx";
-import * as IoIcons from 'react-icons/io';
-import { CgProfile } from "react-icons/cg";
-import { FaUserDoctor } from "react-icons/fa6";
-import { FaNotesMedical } from "react-icons/fa6";
+
+import { useNavigate } from "react-router-dom";
+
 
 export const NavbarData = [
   
   {
-    title: 'Our Picks',
-    path: 'portfolio',
-    icon: <IoIcons.IoMdPeople />,
+    title: 'Services',
+    path: 'works',
     cName: 'nav-text'
   },
   
   {
-    title: 'Services',
-    path: 'works',
-    icon: <CgProfile />,
+    title: 'Contact Us',
+    path: 'contact',
     cName: 'nav-text'
   },
   {
-    title: 'Contact Us',
-    path: 'contact',
-    icon: <CgProfile />,
+    title: 'Login',
+    path: 'login',
     cName: 'nav-text'
   }
 ];

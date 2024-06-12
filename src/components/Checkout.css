@@ -2,8 +2,8 @@
 .checkout-container {
     display: flex;
     justify-content: space-between;
-    padding: 20px;
-
+    margin: 50px;
+    
 }
 
 /* Table styles */
@@ -105,4 +105,14 @@
 
 .button-container {
     text-align: center;
+}
+
+@media only screen and (max-width: 966px) {
+    .checkout-container {
+        display: flex;
+        flex-direction: column;
+        margin: 50px;
+        
+    }
+    
 }

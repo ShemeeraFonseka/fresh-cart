@@ -19,6 +19,10 @@ const navbar = () => {
     navigate("/register");
   }
 
+  const loginHandler = () => {
+    navigate('/login'); 
+  };
+
   return (
     <div className="n-wrapper" id="Navbar">
 
