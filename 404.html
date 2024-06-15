@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>404 - Page Not Found</title>
+    <script type="text/javascript">
+      // Redirect to the root with the hash part of the URL
+      var path = window.location.pathname;
+      var hash = window.location.hash;
+      var newPath = "/fresh-cart" + path.substring("/fresh-cart".length) + hash;
+      window.location.replace(newPath);
+    </script>
+  </head>
+  <body>
+    <h1>404 - Page Not Found</h1>
+    <p>Redirecting...</p>
+  </body>
+</html>
