@@ -38,6 +38,7 @@ function App() {
   return (
     <CartProvider>
     
+    
       <Routes>
       
       <Route path="/" element={<><Navbar /><Intro /><Works /><Experience />
