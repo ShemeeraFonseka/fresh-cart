@@ -76,7 +76,7 @@ const Checkout = () => {
             cartItems: cartItems.map(item => `${item.name} - ${item.quantity} x Rs. ${item.price}`).join(', ')
         };
 
-        emailjs.send('service_xi7u302', 'template_50gkqyy', templateParams, 'soFQR3l3kCMKLYla3')
+        emailjs.send('service_vunoib8', 'template_50gkqyy', templateParams, 'soFQR3l3kCMKLYla3')
             .then((response) => {
                 console.log('Email sent successfully!', response.status, response.text);
                 alert('Email sent successfully!');
